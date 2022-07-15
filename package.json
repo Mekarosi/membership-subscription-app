@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "postgresql-dev-server": "^1.0.6"
+  }
+}
