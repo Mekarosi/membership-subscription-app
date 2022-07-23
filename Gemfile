@@ -13,6 +13,9 @@ gem "sprockets-rails"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 6.0'
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
@@ -66,7 +69,7 @@ end
 
 group :production do
   # Use the PostgreSQL gem for Heroku production server
-  gem 'pg'
+  gem 'pg', '~> 1.4', '>= 1.4.1'
 end
 
 group :test do
