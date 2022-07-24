@@ -49,6 +49,13 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+gem 'popper_js', '~> 2.11', '>= 2.11.5'
+
+gem 'jquery-rails', '~> 4.5'
+
+# Use Twitter bootstrap for front-end UI and layout
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
