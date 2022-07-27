@@ -96,6 +96,8 @@ GEM
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.5-x64-mingw-ucrt)
+    font-awesome-rails (4.7.0.8)
+      railties (>= 3.2, < 8.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -142,6 +144,7 @@ GEM
     nokogiri (1.13.7-x64-mingw-ucrt)
       racc (~> 1.4)
     pg (1.4.1-x64-mingw-ucrt)
+    popper_js (2.11.5)
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
@@ -243,10 +246,12 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.7)
   capybara
   debug
+  font-awesome-rails
   importmap-rails
   jbuilder
   jquery-rails (~> 4.5)
   pg (~> 1.4, >= 1.4.1)
+  popper_js (~> 2.11, >= 2.11.5)
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
   sass-rails (~> 6.0)

@@ -12,9 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
 
+
+/*Background gradient*/
 
 .navbar, .home-callout {
     /*Gradient provided by uiGradients.com*/
@@ -23,9 +26,39 @@
     background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/*Typography styles*/
+
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
+
+
+/*Navbar styles*/
+
+
+.navbar-brand {
+    color: dimgrey;
+}
+
+.navbar-brand:hover {
+     color: grey;
+    opacity: 0.65;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: dimgrey;
+}
+
+.nav-link {
+    color: dimgrey;
+}
+
+.nav-link:hover {
+    color: grey;
+    opacity: 0.65;
+}
+
+/*Home page Styles*/
 
 .home-callout {
     color: dimgrey;
