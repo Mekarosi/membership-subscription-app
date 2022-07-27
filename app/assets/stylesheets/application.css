@@ -46,6 +46,12 @@ h1, h2, h3 {
      color: grey;
     opacity: 0.65;
 }
+ 
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  background-color: #FFFEFF;  
+}
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: dimgrey;
