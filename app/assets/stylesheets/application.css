@@ -77,7 +77,7 @@ h1, h2, h3 {
 .row {
     justify-content: center;
    
-    border: 2px solid #FFFDF6;
+   /* border: 2px solid #FFFDF6;*/
     background-color: #FFFEF9;
 }
 
