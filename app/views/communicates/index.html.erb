@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Communicates</h1>
+
+<div id="communicates">
+  <% @communicates.each do |communicate| %>
+    <%= render communicate %>
+    <p>
+      <%= link_to "Show this communicate", communicate %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New communicate", new_communicate_path %>
