@@ -23,14 +23,21 @@ class CommunicatesController < ApplicationController
   def create
     @communicate = Communicate.new(communicate_params)
 
-    respond_to do |format|
+    # respond_to do |format|
+    #   if @communicate.save
+    #     format.html { redirect_to new_communicate_path, notice: "Message sent." }
+    #     format.json { render :show, status: :created, location: @communicate }
+    #   else
+    #     format.html { render :new, status: :unprocessable_entity, notice: "Error occured." }
+    #     format.json { render json: @communicate.errors, status: :unprocessable_entity }
+    #   end
       if @communicate.save
-        format.html { redirect_to new_communicate_path, notice: "Message sent." }
-        format.json { render :show, status: :created, location: @communicate }
+        flash[:success] = "Message sent"
+        redirect_to new_communicate_path
       else
-        format.html { render :new, status: :unprocessable_entity, notice: "Error occured." }
-        format.json { render json: @communicate.errors, status: :unprocessable_entity }
-      end
+        flash[:danger] = @communicate.errors.full_messages.join(", ")
+        redirect_to new_communicate_path 
+      # end   
     end
   end
 
