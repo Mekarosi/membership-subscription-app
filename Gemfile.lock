@@ -180,6 +180,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    rb-readline (0.5.5)
     regexp_parser (2.5.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -256,6 +257,7 @@ DEPENDENCIES
   popper_js (~> 2.11, >= 2.11.5)
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
+  rb-readline (~> 0.5.5)
   sass-rails (~> 6.0)
   selenium-webdriver
   sprockets-rails

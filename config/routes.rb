@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  resources :communicates
   root to: "pages#home"
   get 'about', to: 'pages#about'
+  resources :communicates
+  get 'communicate-with-us', to: 'communicates#new'
+
   # resources :contacts
 end
