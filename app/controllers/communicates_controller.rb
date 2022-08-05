@@ -32,6 +32,10 @@ class CommunicatesController < ApplicationController
     #     format.json { render json: @communicate.errors, status: :unprocessable_entity }
     #   end
       if @communicate.save
+        name = params[:communicate][:name]
+        email = params[:communicate][:email]
+        body = params[:communicate][:comment]
+        CommunicateMailer.communicate_email(name, email, body).deliver
         flash[:success] = "Message sent"
         redirect_to new_communicate_path
       else
