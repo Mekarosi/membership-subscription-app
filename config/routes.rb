@@ -3,6 +3,4 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   resources :communicates, only: :create
   get 'communicate-with-us', to: 'communicates#new', as: 'new_communicate'
-
-  # resources :contacts
 end
