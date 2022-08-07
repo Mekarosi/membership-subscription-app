@@ -81,3 +81,6 @@ h1, h2, h3 {
     background-color: #FFFEF9;
 }
 
+.alert-notice {
+    display: none;
+}
