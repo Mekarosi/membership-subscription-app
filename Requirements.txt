@@ -1,0 +1,5 @@
+Memberships
+* User should see link for Basic subscription on home page
+* User should see link for Pro subscription on home page
+* Basic subscription link should point to regular Devise sign up form
+* Pro subscription link should point to a custom sign up form

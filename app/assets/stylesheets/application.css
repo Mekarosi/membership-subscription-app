@@ -84,3 +84,23 @@ h1, h2, h3 {
 .alert-notice {
     display: none;
 }
+
+.home-signup-link{
+   margin-top: 30px;
+}
+
+.subscription-container {
+    width: auto;
+    height: auto;
+    background-color: #F8F9FA;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+}
+
+.subscription-heading {
+    padding: 20px;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    margin-bottom: 20px;
+}
