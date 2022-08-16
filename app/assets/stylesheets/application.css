@@ -104,3 +104,17 @@ h1, h2, h3 {
 .btn-group-lg>.btn, .btn-lg {
     margin-bottom: 20px;
 }
+
+/*media query*/
+
+@media screen and (min-width: 600px) {
+  .subscription-container  {
+     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .subscription-container  {
+     margin-bottom: 20px;
+  }
+}
